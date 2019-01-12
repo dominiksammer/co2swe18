@@ -35,8 +35,9 @@ public class OperationTest {
 	
 	@Test
 	public void testDiv() throws CalculatorException {
-		assertEquals(new Div().calculate(2, 1), 1, 1);
-	}	
+	    //Test
+        assertEquals(new Div().calculate(2, 1), 1, 1);
+    }
 
 	
 }
