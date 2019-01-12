@@ -49,6 +49,7 @@ public class OperationTest {
 		assertEquals(8, mulresult, 0.0001);
 	}
 	
+	@Test
 	public void testMod() throws CalculatorException{
 		
 		Mod mod = new Mod();
