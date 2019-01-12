@@ -16,6 +16,7 @@ public class ParserTest {
 	public void testNullParser() {
 		new Parser(null);
 	}
+	
 
 	@Test(expected = FileNotFoundException.class)
 	public void testParserInvalidFile() throws Exception {
