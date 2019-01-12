@@ -8,6 +8,7 @@ import org.junit.Test;
 import at.edu.c02.calculator.CalculatorException;
 import at.edu.c02.calculator.MathOperation;
 import at.edu.c02.calculator.logic.operations.Add;
+import at.edu.c02.calculator.logic.operations.Div;
 
 public class OperationTest {
 
@@ -31,6 +32,11 @@ public class OperationTest {
 		double result = sub.calculate(2, 1);
 		assertEquals(result, 1, 1);
 	}
+	
+	@Test
+	public void testDiv() throws CalculatorException {
+		assertEquals(new Div().calculate(2, 1), 1, 1);
+	}	
 
 	
 }
