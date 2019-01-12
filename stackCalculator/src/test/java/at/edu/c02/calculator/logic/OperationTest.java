@@ -35,13 +35,17 @@ public class OperationTest {
 	
 	@Test
 	public void testDiv() throws CalculatorException {
-	    //Test
-        assertEquals(new Div().calculate(2, 1), 1, 1);
-    }
+		assertEquals(new Div().calculate(2, 1), 1, 1);
+	}	
 
-    @Test(expected = CalculatorException.class)
-	public void testCalcExceptionWhenDiv0()  throws CalculatorException {
-		new Div().calculate(2, 0);
+	@Test
+	public void testMul() throws CalculatorException{
+		
+		Mul mul = new Mul();
+		
+		double mulresult = mul.calculate(2, 4);
+		
+		assertEquals(8, mulresult, 0.0001);
 	}
 	
 }
