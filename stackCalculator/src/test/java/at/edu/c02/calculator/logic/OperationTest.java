@@ -9,6 +9,7 @@ import at.edu.c02.calculator.CalculatorException;
 import at.edu.c02.calculator.MathOperation;
 import at.edu.c02.calculator.logic.operations.Add;
 import at.edu.c02.calculator.logic.operations.Div;
+import at.edu.c02.calculator.logic.operations.Mod;
 
 public class OperationTest {
 
@@ -46,6 +47,15 @@ public class OperationTest {
 		double mulresult = mul.calculate(2, 4);
 		
 		assertEquals(8, mulresult, 0.0001);
+	}
+	
+	public void testMod() throws CalculatorException{
+		
+		Mod mod = new Mod();
+		
+		double modresult = mod.calculate(5,3);
+		
+		assertEquals(2, modresult, 0.000001);
 	}
 	
 }
