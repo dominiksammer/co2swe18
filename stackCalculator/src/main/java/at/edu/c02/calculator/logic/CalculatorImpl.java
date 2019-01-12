@@ -26,6 +26,7 @@ public class CalculatorImpl implements Calculator {
 
 		MathOperation mathOperation = factory.getOperation(op);
 
+
 		if (mathOperation == null)
 			throw new CalculatorException("Invalid operation");
 
