@@ -2,6 +2,7 @@ package at.edu.c02.calculator.logic;
 
 import static org.junit.Assert.assertEquals;
 
+import at.edu.c02.calculator.logic.operations.Mul;
 import org.junit.Test;
 
 import at.edu.c02.calculator.CalculatorException;
@@ -23,6 +24,13 @@ public class OperationTest {
 		assertEquals(3, result, 0.0001);
 	}
 
+	@Test
+	public void testSubstraction() throws CalculatorException {
+		MathOperation sub = new Mul();
+
+		double result = sub.calculate(2, 1);
+		assertEquals(result, 1, 1);
+	}
 
 	
 }
